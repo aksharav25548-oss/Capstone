@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Streamr</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+  <div class="container">
+    <!-- LEFT SIDEBAR / NAVIGATION -->
+    <aside class="sidebar">
+      <h2 class="logo" style="font-size: 100px;">⚡️</h2>
+      <h1 class="logo" style="font-style: italic; margin-bottom: 400px; margin-right:  50px; color: burlywood;">Streamr</h1>
+      <nav>
+        <a href="#" class="active">🏠 Home</a>
+        <a href="#">🔍 Explore</a>
+        <a href="#">🔔 Notifications</a>
+        <a href="#">👤 Profile</a>
+      </nav>
+      <button class="tweet-btn">Tweet</button>
+    </aside>
+
+    <!-- MAIN FEED -->
+    <main class="feed">
+      <!-- Tweet input -->
+      <div class="tweet-input">
+        <img src="https://via.placeholder.com/48" alt="user" class="avatar">
+        <textarea placeholder="What's happening?" id="tweet-text"></textarea>
+      </div>
+      <button class="tweet-post-btn">Post</button>
+      <div class="divider"></div>
+
+      <!-- Tweets -->
+      <div class="tweets" id="tweet-feed">
+        <div class="tweet">
+          <img src="https://via.placeholder.com/48" alt="user" class="avatar">
+          <div class="tweet-content">
+            <div class="tweet-header">
+              <strong>John Doe</strong> <span>@johndoe • 2h</span>
+            </div>
+            <p>Just setting up my Twitter clone 😎</p>
+            <div class="tweet-actions">
+              <button>💬</button>
+              <button>🔁</button>
+              <button>❤️</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="tweet">
+          <img src="https://via.placeholder.com/48" alt="user" class="avatar">
+          <div class="tweet-content">
+            <div class="tweet-header">
+              <strong>Jane Smith</strong> <span>@janesmith • 1h</span>
+            </div>
+            <p>Working on my frontend skills using HTML, CSS & JS 💻</p>
+            <div class="tweet-actions">
+              <button>💬</button>
+              <button>🔁</button>
+              <button>❤️</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- RIGHT SIDEBAR / WIDGETS -->
+    <aside class="widgets">
+      <div class="trends">
+        <h3>Trends for you</h3>
+        <ul>
+          <li>#WebDevelopment</li>
+          <li>#JavaScript</li>
+          <li>#OpenAI</li>
+          <li>#Frontend</li>
+        </ul>
+      </div>
+
+      <div class="who-to-follow">
+        <h3>Who to follow</h3>
+        <div class="follow-user">
+          <img src="https://via.placeholder.com/40" alt="pfp">
+          <div>
+            <strong>Alice</strong><br><span>@alice_dev</span>
+          </div>
+          <button>Follow</button>
+        </div>
+        <div class="follow-user">
+          <img src="https://via.placeholder.com/40" alt="pfp">
+          <div>
+            <strong>Bob</strong><br><span>@bob_codes</span>
+          </div>
+          <button>Follow</button>
+        </div>
+      </div>
+    </aside>
+  </div>

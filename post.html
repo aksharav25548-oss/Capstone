@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Funky Post</title>
+
+<style>
+    body {
+        font-family: 'Poppins', sans-serif;
+        background: #f7f7fa;
+        display: flex;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .container {
+        background-color: rgb(184, 183, 158);
+        width: 420px;
+        border-radius: 14px;
+        padding: 25px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+        margin-bottom: 10px;
+        text-align: center;
+        color: #444;
+    }
+
+    .input-box {
+        margin: 15px 0;
+        background-color: #8bb9b8;
+        border-radius: 10px;
+        border: 1px solid#1e17a3;
+    }
+
+    textarea::placeholder{
+        color: #3b155c;
+    }
+
+    textarea {
+        width: 390px;
+        height: 100px;
+        resize: none;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 10px;
+        outline: none;
+        font-size: 14px;
+        background-color: #5662a161;
+
+    }
+
+    .image-upload {
+        border: 2px solid rgb(79, 29, 124);
+        padding: 20px;
+        text-align: center;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: 0.2s;
+        color: #4e3663;
+        background-color: #6e578376;
+    }
+
+    .image-upload:hover {
+        border-color: #6c63ff;
+        color: #6c63ff;
+    }
+
+    #preview {
+        margin-top: 15px;
+        width: 100%;
+        aspect-ratio: 1/1;
+        background: #466c5976;
+        border-radius: 10px;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+    .sticker-list {
+        display: flex;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 10px 0;
+    }
+
+    .sticker {
+        font-size: 32px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    .sticker:hover {
+        transform: scale(1.2);
+    }
+
+    .sticker-on-image {
+        position: absolute;
+        font-size: 50px;
+        top: 10px;
+        left: 10px;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        background: #656390;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+    <h2>Create a Funky Post ✨</h2>
+
+    <!-- Caption -->
+    <div class="input-box">
+        <label>Caption:</label>
+        <textarea placeholder="Write something..." style="color: #1e17a3;"></textarea>
+    </div><br><br>
+
+    <!-- Image Upload -->
+    <label class="image-upload">
+        Click to upload an image
+        <input type="file" id="imageInput" accept="image/*" style="display:none;">
+    </label><br><br>
+
+    <!-- Preview -->
+    <div id="preview"></div>
+
+    <!-- Stickers -->
+    <h3 style="margin-top: 15px;">Choose Stickers</h3>
+    <div class="sticker-list">
+        <span class="sticker">✨</span>
+        <span class="sticker">🔥</span>
+        <span class="sticker">💖</span>
+        <span class="sticker">😎</span>
+        <span class="sticker">🎉</span>
+        <span class="sticker">🌈</span>
+    </div>
+
+    <!-- Post btn -->
+    <button>Post</button>
+</div>
